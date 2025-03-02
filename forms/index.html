@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form - Lets Learn it</title>
+</head>
+
+<body>
+    <form>
+        <div>
+            <h1>Form to apply for sigma web development course-Ta</h1>
+            <form action="post">
+                <div>
+                    <label for="username">Enter your username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username">
+
+                </div>
+                <div>
+                    <h2>Gender Selection</h2>
+
+                    <label>
+                        <input type="radio" name="gender" value="male"> Male
+                    </label><br>
+                    <label>
+                        <input type="radio" name="gender" value="female"> Female
+                    </label><br><br>
+
+                    <button type="button" onclick="checkGender()">Submit</button>
+                    <p id="result"></p>
+                    <div>
+                        <label>
+                            <input type="checkbox" name="interest" value="Subscrib to news latter">Subscrib to news
+                            latter
+                        </label><br>
+                    </div>
+                    <div>
+                        <label for="feedback">Your Feedback:</label><br>
+                        <textarea id="feedback" name="feedback" rows="4" cols="50"
+                            placeholder="Write your feedback here..."></textarea><br><br>
+                    </div>
+                    <div>
+                        <label for="fruits">Select a fruit:</label><br>
+                        <select id="fruits" name="fruits">
+                            <option value="apple">Apple</option>
+                            <option value="banana">Banana</option>
+                            <option value="orange">Orange</option>
+                            <option value="grape">Grape</option>
+                            <option value="mango">Mango</option>
+                        </select><br><br>
+                    </div>
+
+                </div>
+            </form>
+</body>
+
+</html>

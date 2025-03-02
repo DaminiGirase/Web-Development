@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css float clear</title>
+    <style>
+        *{
+            margin: 0;
+             padding: 0;
+        }
+        .cards{
+            border: 3px solid black;
+           display: flow-root;
+        }
+        img{
+            float: right;
+        }
+        /* .card:nth-child(3){
+           clear: right;
+        } */
+        .card{
+            border: 3px solid salmon;
+            margin: 23px;
+            padding: 23px;
+        }
+       .card::first-line{
+        color: rgb(139, 139, 205);
+       }
+       [data-colour=primary]{
+        color: rgb(223, 132, 20);
+        margin: 23px;
+       }
+       .cards::before{
+        content: "damini is good girl";
+       }
+
+
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="https://images.unsplash.com/photo-1733056883310-0e1658d09c36?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4fHx8ZW58MHx8fHx8" alt=""width=450px>
+    <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quae tenetur repellat qui deleniti voluptates, accusantium corporis dolorum voluptatem perferendis aut dicta quam! Natus sequi maiores assumenda iste atque unde dolorum expedita fugiat minus repellendus esse enim, officia officiis voluptates suscipit, exercitationem numquam quaerat explicabo saepe aliquid in odio aspernatur.</div>
+    <div data-colour="primary"class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quod itaque blanditiis qui eaque cum vitae asperiores ut quia consequatur ipsa illo eius tempore, sit sunt ad deleniti, animi quos placeat. Velit et iure, voluptatibus ut beatae rem eveniet distinctio aliquid quod, earum architecto. Magnam corporis soluta quas nulla doloribus quibusdam consequatur fugiat, pariatur repellendus cumque. Ut quidem excepturi unde velit quisquam ea dolore quis distinctio recusandae similique, cum dolor.</div>
+    <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sapiente itaque id rem, soluta corporis ab eligendi laborum nihil consequuntur facilis nulla dicta iusto incidunt cumque perspiciatis aperiam culpa sint error dolorum. Delectus vel rerum nostrum debitis aliquam. Quod aliquam voluptatibus facere voluptates eos, nesciunt natus tempora ipsa aperiam in, amet facilis tempore exercitationem eveniet! Optio doloribus nulla quibusdam iste, laudantium culpa libero sint. Sunt, maxime distinctio. Officiis placeat et dignissimos eaque ducimus! Omnis similique repellat corrupti quam! Exercitationem at, soluta vitae earum assumenda mollitia repellendus perspiciatis iusto qui? Inventore.</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css var</title>
+    <style>
+        :root{
+          --colour: rgb(156, 156, 223);
+          --seccolour: rgb(104, 104, 178);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div :first-child{
+            background-color: var(--colour);
+          
+        }
+        .class{
+            background-color: var(--seccolour);
+        }
+        li{
+            list-style: none;
+        }
+        div{
+            display: flex;
+           margin: 45px;
+        }
+       
+         
+    </style>
+</head>
+<body>
+    <div>
+       <ul>
+            <li> Name </li>
+            <li>Student</li>
+            <li>Roll number</li>
+        </ul>
+    </div>
+    <div class="class">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore alias rem consequuntur corrupti dolorem nam adipisci commodi, assumenda odio voluptatem provident atque ea similique, quas mollitia asperiores, veritatis modi saepe molestias tenetur nulla! Repudiandae quidem provident saepe facilis iusto cupiditate voluptatibus vitae repellat quis numquam. Quo ipsum odit assumenda quas dicta omnis voluptatem aut dolores earum magnam at dolore eos molestiae ex quia minima excepturi cum corporis impedit delectus soluta esse, corrupti debitis vitae? Velit, enim optio quo deserunt magni deleniti quidem. Quibusdam architecto possimus quidem dolore repellat obcaecati ea voluptates inventore sed quaerat. Quam labore impedit atque autem cumque.</div>
+    
+    
+</body>
+</html>
